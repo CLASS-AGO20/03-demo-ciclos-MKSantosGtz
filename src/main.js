@@ -54,6 +54,13 @@ export default class App {
   contarImparesDo(inicio, fin) {
     let i = inicio;
     let impares = 0;
+
+    if (inicio > fin) {
+      let t = inicio;
+      inicio = fin;
+      fin = t;
+    }
+
     do {
       if (i % 2 != 0) {
         impares++;
